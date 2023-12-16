@@ -4,6 +4,15 @@
   justify-content: flex-end;
 }
 
+.mindmap-container {
+  width: 900px;
+  height: calc(900px - 40px);
+  margin-left: 450px;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 .doc-list {
   font-family: Arial, sans-serif;
   flex: 1;
@@ -20,11 +29,11 @@ ul {
 
 li {
   padding: 15px;
-  border-bottom: 1px solid #ddd; /* Divider */
+  border-bottom: 1px solid #ddd;
 }
 
 li:last-child {
-  border-bottom: none; /* Remove divider for the last item */
+  border-bottom: none;
 }
 
 input[type="file"]::file-selector-button {
