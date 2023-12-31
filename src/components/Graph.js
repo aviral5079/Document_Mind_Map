@@ -1,4 +1,4 @@
-import doc from "../data/doc1";
+import doc from "../data/doc";
 
 const helper = (number) => {
   const base = "A".charCodeAt(0) - 1;
