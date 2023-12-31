@@ -22,14 +22,8 @@ const ChatBar = () => {
   const btnRef = React.useRef();
   return (
     <div>
-      <Button
-        ref={btnRef}
-        onClick={onOpen}
-        leftIcon={<ChatIcon />}
-        colorScheme="green"
-        variant="outline"
-      >
-        Ask Any Question
+      <Button ref={btnRef} onClick={onOpen} colorScheme="green">
+        <ChatIcon />
       </Button>
       <Drawer
         isOpen={isOpen}

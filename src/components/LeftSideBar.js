@@ -1,7 +1,6 @@
 import React from "react";
 import DocumentList from "./DocumentList";
 import FileInput from "./FileInput";
-import ChatBar from "./ChatBar";
 import {
   Drawer,
   DrawerBody,
@@ -14,14 +13,15 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
-import { HamburgerIcon, ChatIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import "../styles/leftSideBar.css";
 
 const SideBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
   return (
-    <div className="navbar">
+    <div className="left-sidebar">
       <Button ref={btnRef} colorScheme="green" onClick={onOpen}>
         <HamburgerIcon />
       </Button>
@@ -43,8 +43,6 @@ const SideBar = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-
-      <ChatBar />
     </div>
   );
 };

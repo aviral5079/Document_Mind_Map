@@ -12,9 +12,7 @@ import ReactFlow, {
 import "reactflow/dist/style.css";
 
 import CustomNode from "./CustomNode";
-
-import "../index.css";
-import "../App.css";
+import "../styles/mindmap.css";
 
 import data from "../data/doc1";
 
@@ -62,9 +60,9 @@ const CustomNodeFlow = () => {
   useEffect(() => {
     setViewport(
       {
-        x: (viewportCoordinates.x + 700) * 0.67,
-        y: (viewportCoordinates.y + 400) * 0.67,
-        zoom: 0.67,
+        x: (viewportCoordinates.x + 900) * 0.8,
+        y: (viewportCoordinates.y + 300) * 0.8,
+        zoom: 0.8,
       },
       { duration: 800 }
     );
@@ -312,8 +310,7 @@ const CustomNodeFlow = () => {
       nodeTypes={nodeTypes}
       connectionLineStyle={connectionLineStyle}
       snapToGrid={true}
-      defaultViewport={{ x: 0, y: 0, zoom: 1 }}
-      fitView
+      defaultViewport={{ x: 800, y: 300, zoom: 0.67 }}
       snapGrid={snapGrid}
       attributionPosition="bottom-left"
     >

@@ -1,0 +1,10 @@
+.mainbar {
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mindmap-container {
+  height: 90vh;
+  width: 100%;
+}
