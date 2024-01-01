@@ -58,7 +58,7 @@ export default memo(({ data, isConnectable }) => {
     }
   };
 
-  calcHandlePosition(data.positionAngle);
+  calcHandlePosition(data.firstChildPostionAngle);
 
   return (
     <div className="treeNode">
@@ -108,7 +108,7 @@ export default memo(({ data, isConnectable }) => {
       {showDetails && (
         <div className="treeNode-body">
           <Stack direction="column" spacing={2}>
-            <Text fontSize="sm" color="#23272a" noOfLines={[1, 2, 3]}>
+            <Text fontSize="sm" color="#23272a">
               {data.summary}
             </Text>
             {Object.entries(data.info)?.map(([key, value]) => (

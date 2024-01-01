@@ -35,6 +35,10 @@ const styles = StyleSheet.create({
     margin: 12,
     textAlign: "center",
   },
+  subHeader: {
+    fontSize: 16,
+    margin: 10,
+  },
   footer: {
     fontSize: 14,
     marginTop: 20,
