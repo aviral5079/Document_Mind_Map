@@ -55,12 +55,13 @@ const styles = StyleSheet.create({
 const MyDocument = () => (
   <Document title={doc[0].content} author={doc[1].content}>
     <Page style={styles.body}>
-      {doc.map((node) => {
+      {doc.map((node, index) => {
         if (node.contentType === "image") {
-          return <Image style={styles.image} src={node.src} />;
+          return <Image key={index} style={styles.image} src={node.src} />;
         } else if (node.contentType === "text") {
           return (
             <Text
+              key={index}
               style={styles[node.textType]}
               break={node.textType === "header"}
             >

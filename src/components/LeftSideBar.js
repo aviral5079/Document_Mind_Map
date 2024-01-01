@@ -10,10 +10,11 @@ import {
   DrawerCloseButton,
   Button,
   useDisclosure,
-  Flex,
+  Icon,
 } from "@chakra-ui/react";
 
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { GrDocument } from "react-icons/gr";
+
 import "../styles/leftSideBar.css";
 
 const SideBar = () => {
@@ -22,8 +23,8 @@ const SideBar = () => {
 
   return (
     <div className="left-sidebar">
-      <Button ref={btnRef} colorScheme="green" onClick={onOpen}>
-        <HamburgerIcon />
+      <Button ref={btnRef} color="#3F72AF" borderRadius="0" onClick={onOpen}>
+        <Icon as={GrDocument} />
       </Button>
       <Drawer
         isOpen={isOpen}

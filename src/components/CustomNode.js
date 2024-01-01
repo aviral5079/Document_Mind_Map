@@ -32,7 +32,7 @@ import "../styles/treeNode.css";
 const handleStyle = {
   borderRadius: "4px",
   border: "1px solid #23272a",
-  backgroundColor: "lightgreen",
+  backgroundColor: "#3F72AF",
 };
 
 export default memo(({ data, isConnectable }) => {
@@ -145,21 +145,21 @@ export default memo(({ data, isConnectable }) => {
                   <GridItem pl="2" area={"docButton"}>
                     <Button
                       leftIcon={<IoDocumentTextOutline />}
-                      colorScheme="blue"
+                      color="#3F72AF"
                       variant="outline"
                     >
                       Go to Document
                     </Button>
                   </GridItem>
                   <GridItem pl="2" area={"ColorPicker"}>
-                    <Button colorScheme="blue" variant="outline">
+                    <Button color="#3F72AF" variant="outline">
                       Related Nodes
                     </Button>
                   </GridItem>
                   <GridItem pl="2" area={"parentButton"}>
                     <Button
                       leftIcon={<RiParentFill />}
-                      colorScheme="blue"
+                      color="#3F72AF"
                       variant="outline"
                       onClick={() => {
                         data.handleSelected({
@@ -187,7 +187,7 @@ export default memo(({ data, isConnectable }) => {
                   <GridItem pl="2" area={"childrenButton"}>
                     <Button
                       leftIcon={<TiFlowChildren />}
-                      colorScheme="blue"
+                      color="#3F72AF"
                       variant="outline"
                       onClick={() => {
                         data.handleSelected({
@@ -240,7 +240,7 @@ export default memo(({ data, isConnectable }) => {
                       </SliderTrack>
                       <Tooltip
                         hasArrow
-                        bg="#7289da"
+                        bg="#DBE2EF"
                         color="#23272a"
                         placement="top"
                         isOpen={showTooltip}

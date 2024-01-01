@@ -22,7 +22,7 @@ const ChatBar = () => {
   const btnRef = React.useRef();
   return (
     <div>
-      <Button ref={btnRef} onClick={onOpen} colorScheme="green">
+      <Button ref={btnRef} onClick={onOpen} color="#3F72AF" borderRadius="0">
         <ChatIcon />
       </Button>
       <Drawer

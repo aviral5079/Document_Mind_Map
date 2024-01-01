@@ -58,7 +58,7 @@ input[type="file"]::file-selector-button:active {
 }
 
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #3f72af;
   color: #fff;
   padding: 10px 20px;
   border: none;

@@ -5,7 +5,7 @@
 }
 
 .react-flow__node.selected {
-  background-color: lightgreen;
+  background-color: #dbe2ef;
 }
 
 .panel-buttons button {

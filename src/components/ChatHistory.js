@@ -1,6 +1,6 @@
 import React from "react";
-import { Stack, Avatar } from "@chakra-ui/react";
-
+import { Stack, Avatar, Icon } from "@chakra-ui/react";
+import { GoDependabot } from "react-icons/go";
 import { chatMessages } from "../data/chatMessages";
 
 const ChatHistory = () => {
@@ -10,11 +10,18 @@ const ChatHistory = () => {
         <li key={index} className={`${message.role}-message`}>
           {message.role === "user" ? (
             <Stack direction="row" spacing={2}>
-              <Avatar size="sm" bg="grey" />
+              <Avatar size="xs" bg="#3F72AF" />
               <span>{message.message}</span>
             </Stack>
           ) : (
-            <span>{message.message}</span>
+            <Stack direction="row" spacing={2}>
+              <Avatar
+                size="sm"
+                bg="#f9f7f7"
+                icon={<Icon as={GoDependabot} color="#23272a" />}
+              />
+              <span>{message.message}</span>
+            </Stack>
           )}
         </li>
       ))}

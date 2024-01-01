@@ -16,9 +16,9 @@ import "../styles/mindmap.css";
 
 import data from "../data/doc1";
 
-const bgColor = "#dde6d5";
+const bgColor = "#F9F7F7";
 
-const connectionLineStyle = { stroke: "#7289da", width: "1px" };
+const connectionLineStyle = { stroke: "#112D4E", width: "1px" };
 const snapGrid = [20, 20];
 const nodeTypes = {
   customNode: CustomNode,
@@ -152,7 +152,7 @@ const CustomNodeFlow = () => {
       sourceHandle: theta >= 90 && theta <= 270 ? "a" : "b",
       targetHandle: "a",
       style: {
-        stroke: "#7289da",
+        stroke: "#112D4E",
         strokeWidth: 2,
       },
     });
@@ -197,7 +197,7 @@ const CustomNodeFlow = () => {
         id: edge_id,
         source: String(index + 1),
         style: {
-          stroke: "#7289da",
+          stroke: "#112D4E",
           strokeWidth: 2,
         },
         target: String(index + 1) + temp,
@@ -220,7 +220,7 @@ const CustomNodeFlow = () => {
     (params) =>
       setEdges((eds) =>
         addEdge(
-          { ...params, animated: true, style: { stroke: "#7289da" } },
+          { ...params, animated: true, style: { stroke: "#424874" } },
           eds
         )
       ),
