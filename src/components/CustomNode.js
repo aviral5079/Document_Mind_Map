@@ -75,7 +75,7 @@ export default memo(({ data, isConnectable }) => {
             setShowDetails(!showDetails);
           }}
         >
-          <Heading as="h4" size="md" color="#23272a">
+          <Heading as="h4" size="md" color="#23272a" textAlign="center">
             {data.label}
           </Heading>
         </div>
